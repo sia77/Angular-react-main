@@ -1,6 +1,4 @@
 html, body {
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -11,5 +9,28 @@ body {
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     height: 100vh; /* Make sure the body takes up the full viewport height */
-  }
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center align the items horizontally */
+    text-align: center; /* Optional: Ensures text is centered inside */
+    gap: 20px; /* Optional: Adds space between the elements */
+}
+
+.nav{
+    text-align: left;
+}
+
+.links,
+.links:active{
+    color:black;
+    font-size:18px;
+    text-decoration: none;
+}
 
