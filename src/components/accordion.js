@@ -1,12 +1,9 @@
 
 
-export function initAccordion(parentId, list) {
+export function initAccordion(list) {
 
-  const parent = document.getElementById(parentId);
-  if(!parent){
-    console.warn(`No element found with ID "${parentId}"`);
-    return;
-  }
+  const container = document.createElement('div');
+  container.className = 'accordion-container';
 
   const row = document.createElement('div');
   row.className ='accordion-row';
@@ -30,7 +27,8 @@ export function initAccordion(parentId, list) {
 
   row.appendChild(title);
   row.appendChild(content);
-  parent.appendChild(row);
+  container.appendChild(row)
+  return container;
 
 }
 
