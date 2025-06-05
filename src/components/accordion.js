@@ -21,6 +21,7 @@ export function initAccordion(list) {
     link.href = el.link;
     link.textContent = el.name;
     link.className = 'links';
+    link.target = "_blank";
 
     content.appendChild(link);
   });
